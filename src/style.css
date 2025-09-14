@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #033649;
+  padding: 20px;
+  min-height: 100vh;
+  margin: 0;
+}
+a {
+  color: #0277bd;
+}
+
+.forecast {
+  background: white;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+}
+header {
+  border-bottom: 1px solid #b3e5fc;
+  padding: 0 0 30px 0;
+}
+.search-form-input {
+  background-color: #bbdefb;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
+  color: #0d47a1;
+}
+.search-form-button {
+  background: #0288d1;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: #e1f5fe;
+  cursor: pointer;
+}
+.search-form-button:hover {
+  background: #01579b;
+}
+main {
+  padding: 30px 0;
+}
+.forecast-data {
+  display: flex;
+  justify-content: space-between;
+}
+.city-forecast {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+  color: #01579b;
+}
+.forecast-details {
+  font-size: 16px;
+  color: #4f83cc;
+  line-height: 24px;
+  font-weight: 400;
+}
+.forecast-temperature-container {
+  display: flex;
+}
+.forecast-icon {
+  font-size: 44px;
+  margin-top: 22px;
+  color: #039be5;
+}
+.forecast-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #0d47a1;
+}
+.forecast-unit {
+  margin-top: 16px;
+  font-size: 28px;
+  color: #0277bd;
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #546e79;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .forecast-data {
+    flex-direction: column;
+    text-align: center;
+  }
+  .search-form-input {
+    width: 70%;
+  }
+  .city-forecast {
+    font-size: 32px;
+  }
+  .forecast-temperature {
+    font-size: 72px;
+  }
+}
